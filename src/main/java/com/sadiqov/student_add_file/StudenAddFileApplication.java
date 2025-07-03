@@ -1,4 +1,4 @@
-package com.sadiqov.studen_add_file;
+package com.sadiqov.student_add_file;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

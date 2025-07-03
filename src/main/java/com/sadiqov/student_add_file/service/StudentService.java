@@ -1,7 +1,7 @@
-package com.sadiqov.studen_add_file.service;
+package com.sadiqov.student_add_file.service;
 
-import com.sadiqov.studen_add_file.entitiy.Student;
-import com.sadiqov.studen_add_file.repo.StudentRepository;
+import com.sadiqov.student_add_file.entitiy.Student;
+import com.sadiqov.student_add_file.repo.StudentRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

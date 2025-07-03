@@ -1,6 +1,5 @@
-package com.sadiqov.studen_add_file.controller;
-import com.sadiqov.studen_add_file.service.StudentService;
-import lombok.RequiredArgsConstructor;
+package com.sadiqov.student_add_file.controller;
+import com.sadiqov.student_add_file.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
