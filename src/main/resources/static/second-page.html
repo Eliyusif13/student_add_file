@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İkinci Səhifə</title>
+</head>
+
+<style>
+    body{
+        background-color: wheat;
+    }
+    h1{
+        color: green;
+    }
+</style>
+<body>
+<h1>Fayl uğurla yükləndi!</h1>
+<p>Şəkil adı:<span id="fileName"></span></p>
+<script>
+    const fileName = new URLSearchParams(window.location.search).get('fileName');
+    document.getElementById('fileName').textContent = fileName;
+</script>
+</body>
+</html>

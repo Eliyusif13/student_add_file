@@ -2,6 +2,7 @@ package com.sadiqov.studen_add_file.controller;
 import com.sadiqov.studen_add_file.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,8 +21,14 @@ public class FileController {
     @PostMapping("/upload")
     public ResponseEntity<String> uploadFile(@RequestParam("name") String name,
                                              @RequestParam("file") MultipartFile file) {
+        String fileName = file.getOriginalFilename();
         String response = service.uploadFile(name, file);
-        return ResponseEntity.ok(response);
+
+
+        return ResponseEntity.status(HttpStatus.FOUND)
+                .header("Location", "/second-page.html?fileName=" + fileName)  // fileName ilə yönləndirmə
+                .body(response);
+
     }
 
     @GetMapping("/get/{filename}")
