@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/student_add_file
+    username: myuser
+    password: myuser
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+  file-upload:
+    path: C:\StudentData\
+
+logging:
+  level:
+    org.springframework: INFO
+    com.example: DEBUG
