@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fayl Yüklə</title>
+</head>
+<body>
+<header><h1>File daxil etmek ucun kicik bir peoyekt</h1></header>
+<div class="Container">
+    <div class="Container2">
+        <h2>Fayl Yüklə</h2>
+        <form class="Student" method="POST" enctype="multipart/form-data"
+              action="http://localhost:8080/api/files/upload">
+            <label for="name">Tələbənin Adı:</label>
+            <input type="text" id="name" name="name" required/>
+            <br/><br/>
+            <label for="file">Şəkil Seçin:</label>
+            <input type="file" id="file" name="file"/>
+            <br/><br/>
+            <button type="submit">Yüklə</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
