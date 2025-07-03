@@ -22,6 +22,9 @@ color: black;
     padding: 20px;
     text-align: center;
 }
+#chooseImage{
+    padding-left: 59px;
+}
 
 button {
     background-color: darkred;
@@ -31,5 +34,8 @@ button {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition-duration: 1s;
+}
+button:hover{
+    opacity: 78%;
 }
